@@ -1,7 +1,9 @@
 # Как запустить
 
-...
-
+- Запишите в файл `.env` ваш BITRIX_WEBHOOK_URL
+- Запустите команду `docker build -t bitrix-task .` для сборки образа
+- Запустите контейнер командой `docker run -p 3000:3000 bitrix-task`
+- API будет доступно по адресу `http://localhost:3000`
 
 
 # API mapping to Bitrix

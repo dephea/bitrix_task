@@ -11,9 +11,6 @@ const PORT = process.env.PORT || 3000;
 export const BITRIX_WEBHOOK_URL = process.env.BITRIX_WEBHOOK_URL as string;
 
 
-console.log("PORT =", process.env.PORT);
-console.log("BITRIX_WEBHOOK_URL =", process.env.BITRIX_WEBHOOK_URL);
-
 app.use(express.json());
 
 app.use("/tasks", taskRouter);
